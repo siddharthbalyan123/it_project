@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Geography Now!</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel = "icon" href = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.convform.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>         
+	</head>
+	<body>
+       
+<!-- ChatBot start --> 
+
+    <div class="chat_icon">
+		<img src="img/icons/chatbox.png" width=35% align="right" style="padding-bottom:10px">
+	</div>
+	<div class="chat_box">
+		<div class="my-conv-form-wrapper">
+			<form action="https://formspree.io/f/mrgrynbl" method="POST" class="hidden">
+					<select data-conv-question="Hello! What can I help you with" name="category">
+						<option value="Courses">Courses?</option>
+						<option value="Contacting us">Contacting us?</option>
+					</select>
+				<div data-conv-fork="category">
+					<div data-conv-case="Courses">
+						<input type="text" name="courseName" data-conv-question="Which course do you wish to inquire about?">    
+					</div>
+					<div data-conv-case="Contacting us" data-conv-fork="first-question2">
+						<input type="text" name="contactName" data-conv-question="Why do you want to contact us?"> 
+					</div>
+				</div>
+				<input type="text" name="name" data-conv-question="Please, Enter your name">
+				<input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+				<input data-conv-question="Your message is recieved by us. Please enter your e-mail and we will contact you soon." data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="Your message What's your e-mail?">
+				<select data-conv-question="Please Confirm">
+					<option value="Yes">Confirm</option>
+				</select>
+			</form>
+		</div>
+	</div>
+
+<!-- ChatBot end -->
+	<header class="sticky-top">
+		<section class="header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link act" href="/index">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/courses">Profile</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/contact">Contact</a>
+								</li>
+								<button type="button" class="btn btn-outline-light pad" onclick="document.location ='/login'">Login</button>
+							</ul>
+						</div>
+					  </div>
+					</nav>
+				</div>
+			</section>
+		</header>
+        
+<!-- Header end -->
+<!-- Body start -->
+
+		<section class="back"></section>
+		<section class="mid">
+			<div class="container">
+				<p>Geography and maps are a fundamental language for understanding the world. They provide a framework for organizing and communicating our knowledge. Increasingly geography is used in virtually every field of human endeavor, providing a universal language for understanding, communicating ideas, and providing insights. Geography asks the big questions <br> &#8211 Where? How? Why? What if? &#8211 <br>and gives you the perspective to answer them with advanced technology and a solid knowledge of the world in which we all live.
+				</p>
+			</div>
+			<div class="container" align=center>
+				<h1><i class="fa fa-globe" style="color:#825b3a"></i> Geography</h1>
+				<h4> Isn't just a word it's </h4><hr class="style-one">
+				<br><br>
+			</div>
+			<div class="container">
+				<div class="bg">
+					<div class="row">
+						<div class="col-md-4">
+							<h3><i class="fa fa-map-marker" style="color:#825b3a"></i>  Place</h3>
+							<p>Geography is about more than just the location, coordinates, and position of things on Earth. Geography also studies the physical and human characteristics of places. From the dimensions of a single room to the extent of a cultural region or the entirety of the globe itself, geographers explore the meaning, function, and history of places, how places change, and how they are perceived.</p>
+						</div>
+						<div class="col-md-4">
+							<h3><i class="fa fa-users" style="color:#825b3a"></i>  People</h3>
+							<p>Even though the term "geo-graphy" literally means to graph the earth, geography is also about the study of people. It is about the spatial aspects of human existence, how humans occupy and alter the landscape, and the relationships between nature and society.</p>
+						</div>
+						<div class="col-md-4">
+							<h3><i class="fa fa-map" style="color:#825b3a"></i>  Exploration</h3>
+							<p>History great explorers led challenging expeditions to the farthest reaches of the globe to new continents, the poles, the tops of mountains, and the bottoms of the oceans. Today, modern technologies such as satellite imaging, remote sensing, and lidar have extended our ability to explore how earth and human systems work.</p>
+						</div>
+					</div>
+					<div class="row">
+							<a href="/courses"><img src="img/img2.png" class="banner"></a>
+					</div>
+					<div class="row">
+						<h2 align=center style="padding-bottom:20px;">Courses are available 24x7</h2>
+					</div>
+					<div class="row footer">
+						<p>geographynow.com is an collaboration between geography enthusiasts ands leading learning providers</p>
+						<hr>
+						<h5 align=center>
+							<a href="www.google.com"><i class="fa fa-google"></i></a>&nbsp;
+							<a href="www.facebook.com"><i class="fa fa-facebook"></i></a>&nbsp;
+							<a href="www.instagram.com"><i class="fa fa-instagram"></i></a>&nbsp;
+							<a href="www.twitter.com"><i class="fa fa-twitter"></i></a>&nbsp;
+						</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	{{#if message}}
+		<script>alert('{{message}}')</script>
+	{{/if}}
+</html>
